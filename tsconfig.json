@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "es6",
     "module": "commonjs",
     "declaration": true,
+    "declarationDir": "dist/types",
     "outDir": "dist",
     "sourceMap": true,
     "experimentalDecorators": true,
@@ -11,15 +12,15 @@
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "strictNullChecks": false,
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
       "@src/*": ["src/*"]
     },
-    "lib": ["esnext"]
+    "lib": ["esnext", "dom"]
   },
   "include": ["src/**/*.ts", "tests/**/*.ts"],
   "exclude": ["node_modules"]
