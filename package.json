@@ -9,7 +9,7 @@
     "build": "tsc",
     "start": "tsc -w",
     "lint": "eslint './src/**/*.ts'",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "keywords": [
     "boilerplate",
